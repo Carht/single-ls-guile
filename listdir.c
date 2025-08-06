@@ -7,7 +7,6 @@
 
 // Lista de archivos a scheme
 static SCM scm_get_files(SCM scm_path) {
-  //size_t len;
   char *path  = scm_to_locale_string(scm_path);
 
   if (!path) {
