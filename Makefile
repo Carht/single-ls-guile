@@ -2,9 +2,9 @@ CC 	= gcc
 CFLAGS 	= -Wall -g -std=c99 $(shell pkg-config --cflags guile-3.0)
 LDFLAGS = $(shell pkg-config --libs guile-3.0)
 
-SRC	= listdir.c main.c
+SRC	= main.c
 OBJ	= $(SRC:.c=.o)
-PROG	= listdir
+PROG	= listdirr
 
 all:	$(PROG)
 

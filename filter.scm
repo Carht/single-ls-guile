@@ -71,10 +71,10 @@
 	       (full-path-lst directory-path))))
 
 (format #t "Todos los archivos\n")
-(full-path "/home/lisper/books/Lisp/") ;; ls completo
+(full-path "/home/usuario/books/") ;; ls completo
 (newline)
 (format #t "Solo archivos con extension PDF\n")
-(filter-ext "/home/lisper/books/Lisp/" "pdf") ;; ls sólo para archivos con extensión "pdf"
+(filter-ext "/home/usuario/books/" "pdf") ;; ls sólo para archivos con extensión "pdf"
 (newline)
 (format #t "Ruta completa para solo archivos con extension PDF\n")
-(filter-ext-fullpath "/home/lisper/books/Lisp/" "pdf") ;; ls con full path, sólo para archivos con extensión "pdf"
+(filter-ext-fullpath "/home/usuario/books/" "pdf") ;; ls con full path, sólo para archivos con extensión "pdf"
