@@ -79,12 +79,12 @@ static void inner_main(void *closure, int argc, char **argv) {
 
   scm_c_define_gsubr("list-dir", 1, 0, 0, scm_scan_dir);
 
-  if (argc < 3) {
-    fprintf(stderr, "Uso: %s <directory> <script.scm> [arg ...]\n", argv[0]);
+  if (argc < 2) {
+    fprintf(stderr, "Uso: %s <script.scm> [arg ...]\n", argv[0]);
     exit(1);
   }
 
-  scm_c_primitive_load(argv[2]);
+  scm_c_primitive_load(argv[1]);
 
   free_node(head);
 }
